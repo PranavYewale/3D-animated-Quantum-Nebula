@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chrono-Nexus: An interactive, ultra-realistic 3D scroll-driven showcase of the quantum timepiece of the future. Customize features, view holographic projections, and explore the sub-atomic core.">
+  <title>Chrono-Nexus // Quantum Timepiece</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-G3YRKfr1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C6m_nIn4.css">
+</head>
+<body>
+  <!-- System Boot Loader -->
+  <div id="loader" class="loader-container">
+    <div class="loader-content">
+      <div class="loader-rings">
+        <div class="ring ring-outer"></div>
+        <div class="ring ring-middle"></div>
+        <div class="ring ring-inner"></div>
+      </div>
+      <h1 class="loader-title">CHRONO-NEXUS</h1>
+      <div class="loader-status">
+        <span class="status-label">INITIALIZING NEURAL LINK</span>
+        <div class="progress-bar-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <span id="progress-text" class="status-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Interactive HUD & UI Overlay -->
+  <header class="hud-header">
+    <div class="logo">
+      <span class="logo-accent">⚡</span> CHRONO<span class="logo-separator">//</span>NEXUS
+    </div>
+    <nav class="hud-nav">
+      <a href="#hero" class="nav-link active">OVERVIEW</a>
+      <a href="#deconstruct" class="nav-link">DECONSTRUCT</a>
+      <a href="#hologram" class="nav-link">HOLOGRAM</a>
+      <a href="#core" class="nav-link">QUANTUM CORE</a>
+      <a href="#blueprint" class="nav-link">BLUEPRINT</a>
+      <a href="#warp" class="nav-link">CHRONO-WARP</a>
+      <a href="#calibrate" class="nav-link">CALIBRATION</a>
+      <a href="#gravity" class="nav-link">GRAVITY FIELD</a>
+      <a href="#customize" class="nav-link">CUSTOMIZE</a>
+    </nav>
+    <div class="hud-controls">
+      <button id="sound-toggle" class="hud-btn sound-btn" aria-label="Toggle Sound">
+        <div class="sound-waves">
+          <span class="wave"></span>
+          <span class="wave"></span>
+          <span class="wave"></span>
+          <span class="wave"></span>
+        </div>
+        <span class="btn-text">AUDIO OFF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content -->
+  <main class="scroll-container">
+    <!-- Section 1: Hero -->
+    <section id="hero" class="scroll-section active">
+      <div class="section-content hero-content">
+        <div class="glow-tag">SECURE CONNECTION // ESTABLISHED</div>
+        <h2 class="hero-title">TIME<br><span class="gradient-text">REDEFINED</span></h2>
+        <p class="hero-subtitle">The world's first quantum-synchronized wearable timepiece, powered by sub-atomic oscillation and holographic spatial display.</p>
+        <div class="scroll-prompt">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">SCROLL TO DISCOVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Deconstruct / Exploded View -->
+    <section id="deconstruct" class="scroll-section">
+      <div class="section-content left-align">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h3 class="section-title">PRECISION DECONSTRUCTION</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Exploded-View Architecture</h4>
+          <p>Scroll to pull apart the Chrono-Nexus. View the seamless integration of titanium alloys, high-refractive sapphire lenses, and the inner circuitry chamber.</p>
+          <ul class="spec-list">
+            <li><strong>Chassis:</strong> Grade 5 Aerospace Titanium alloy housing.</li>
+            <li><strong>Crystal:</strong> Dual-dome anti-reflective sapphire shield.</li>
+            <li><strong>Sync:</strong> Entangled quantum clockwork operating at 0 Kelvin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Holographic Display -->
+    <section id="hologram" class="scroll-section">
+      <div class="section-content right-align">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h3 class="section-title">SPATIAL PROJECTION</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Holographic Screen</h4>
+          <p>Ditch traditional screens. The Chrono-Nexus projects a volumetric 3D interface directly above the watch face, dynamically updating stats and notifications in real time.</p>
+          <div class="metric-container">
+            <div class="metric-box">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl">COHERENCE</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">4.8 GHz</span>
+              <span class="metric-lbl">QUANTUM SYNC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Quantum Core -->
+    <section id="core" class="scroll-section">
+      <div class="section-content left-align">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h3 class="section-title">THE ENGINE ROOM</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Sub-Atomic Processor Core</h4>
+          <p>At the center sits the Quantum Core. Surrounded by a dense mesh of orbiting carbon-nanotube databuses, it generates a miniature micro-wormhole fields to keep absolute sync with atomic clocks across the universe.</p>
+          <div class="warning-tag">⚠️ RADIATION SHIELDING ACTIVE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Specs Matrix (Blueprint) -->
+    <section id="blueprint" class="scroll-section">
+      <div class="section-content right-align">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h3 class="section-title">DIAGNOSTIC MATRIX</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Schematic Alignment</h4>
+          <p>Analyzing sub-systems... The watch alignment vector changes to absolute lateral projection. This view enables micro-calibration of the neural sensor grids.</p>
+          <ul class="spec-list">
+            <li><strong>Thermal Expansion:</strong> &lt; 0.0001% structural delta.</li>
+            <li><strong>G-Sensor:</strong> Quad-axis graviton feedback loops.</li>
+            <li><strong>Interface:</strong> Direct mental telemetry layer.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Chrono-Warp -->
+    <section id="warp" class="scroll-section">
+      <div class="section-content left-align">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h3 class="section-title">CHRONO-WARP DRIVE</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Quantum Stream Acceleration</h4>
+          <p>Prepare for warp. The timepiece triggers wormhole dilation, accelerating temporal velocity. Watch as particles stretch into spatial speed lines, warping the local gravity vector.</p>
+          <div class="metric-container">
+            <div class="metric-box">
+              <span class="metric-val">WARP 9.2</span>
+              <span class="metric-lbl">TEMPORAL FACTOR</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">DILATED</span>
+              <span class="metric-lbl">SPACE-TIME</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Snapping Component Calibration (Interactive) -->
+    <section id="calibrate" class="scroll-section">
+      <div class="section-content right-align">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h3 class="section-title">SNAP CALIBRATION</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Interactive Alignment Vectors</h4>
+          <p>The magnetic casing is detached. Use the neural telemetry sliders below to align and snap the components into stable spatial synchronization.</p>
+          
+          <div class="calibration-controls">
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>CHASSIS SHELLS</span>
+                <span id="chassis-val" class="slider-percent">20%</span>
+              </div>
+              <input type="range" id="chassis-slider" min="0" max="100" value="20" class="neon-slider">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>MECHANICAL GEARS</span>
+                <span id="gear-val" class="slider-percent">40%</span>
+              </div>
+              <input type="range" id="gear-slider" min="0" max="100" value="40" class="neon-slider">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>QUANTUM CORE</span>
+                <span id="core-val" class="slider-percent">10%</span>
+              </div>
+              <input type="range" id="core-slider" min="0" max="100" value="10" class="neon-slider">
+            </div>
+          </div>
+          
+          <div id="calibration-status" class="warning-tag warning-pulse">⚠️ CALIBRATION UNLOCKED (COHERENCE: 23%)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Quantum Gravity Well (Interactive Particle Attraction) -->
+    <section id="gravity" class="scroll-section">
+      <div class="section-content left-align">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h3 class="section-title">GRAVITY DILATION</h3>
+        </div>
+        <div class="glass-card">
+          <div class="card-glow"></div>
+          <h4>Mouse-Reactive Gravity Well</h4>
+          <p>Move your mouse around the canvas. The quantum particle cloud reacts to your cursor's gravitational field, bending and orbiting the cursor position in real time.</p>
+          
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>GRAVITATIONAL INTENSITY</span>
+              <span id="gravity-val" class="slider-percent">5.0x</span>
+            </div>
+            <input type="range" id="gravity-slider" min="1" max="15" value="5" step="0.5" class="neon-slider">
+          </div>
+          
+          <div class="info-tag">🌌 INTERACTIVE SPATIAL ATTRACTOR ACTIVE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Customize -->
+    <section id="customize" class="scroll-section">
+      <div class="section-content center-align">
+        <div class="section-header">
+          <span class="section-number">08</span>
+          <h3 class="section-title">CUSTOMIZE ENGINE</h3>
+        </div>
+        <div class="customizer-panel glass-card">
+          <div class="card-glow"></div>
+          <h4>Nexus Configuration</h4>
+          <p>Define your aesthetic. Toggle core diagnostic systems and switch chassis finishes in real time.</p>
+          
+          <div class="config-group">
+            <h5>CHASSIS FINISH</h5>
+            <div class="color-options">
+              <button class="color-btn active" data-color="#3a4f54" style="--color-hex: #3a4f54;" title="Titanium Silver"></button>
+              <button class="color-btn" data-color="#801818" style="--color-hex: #801818;" title="Crimson Core"></button>
+              <button class="color-btn" data-color="#1b5e3a" style="--color-hex: #1b5e3a;" title="Emerald Cyber"></button>
+              <button class="color-btn" data-color="#1d3557" style="--color-hex: #1d3557;" title="Deep Cobalt"></button>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <h5>HOLOGRAM SHIELD</h5>
+            <div class="toggle-container">
+              <span class="toggle-lbl">PROJECTION</span>
+              <button id="hologram-toggle" class="toggle-btn active">ACTIVE</button>
+            </div>
+          </div>
+
+          <div class="config-actions">
+            <button id="diagnostic-btn" class="action-btn primary-glow-btn">RUN DIAGNOSTIC</button>
+            <button id="orbit-btn" class="action-btn secondary-btn">FREE ROTATION</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Scroll Progress Indicator -->
+  <div class="scroll-progress-indicator">
+    <div id="scroll-bar-fill" class="scroll-fill"></div>
+    <div class="scroll-dots">
+      <div class="dot active" data-target="hero"></div>
+      <div class="dot" data-target="deconstruct"></div>
+      <div class="dot" data-target="hologram"></div>
+      <div class="dot" data-target="core"></div>
+      <div class="dot" data-target="blueprint"></div>
+      <div class="dot" data-target="warp"></div>
+      <div class="dot" data-target="calibrate"></div>
+      <div class="dot" data-target="gravity"></div>
+      <div class="dot" data-target="customize"></div>
+    </div>
+  </div>
+
+</body>
+</html>
