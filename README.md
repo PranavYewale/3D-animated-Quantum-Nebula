@@ -27,4 +27,4 @@ Here’s a more polished version of your instructions:
 
 ---
 
-This version is concise, professional, and easy to follow. Would you like me to also add troubleshooting tips (like what to do if `npm run dev` fails)?
+
